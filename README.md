@@ -40,3 +40,10 @@ There is two versions of the VueJS application:
 
 You will see both when the app starts.
 
+### Ruby on Rails
+
+Finally, to tun the Rails version of the application you need to install [Ruby language](https://www.ruby-lang.org/en/) and [Rails Framework](https://rubyonrails.org/). 
+
+Then, go to the folder [railsapp](railsapp) and run the local webserver: ```bin/rails server```
+
+I put a copy of SQLite fixed version (made with the Python script) in the folder [railsapp/db](railsapp/db). You can use it to test the application (it's filename is data.sqlite3).

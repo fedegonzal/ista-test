@@ -1,0 +1,24 @@
+<table id="table" class="stripe fixedHeader-floating">
+<thead>
+    <tr>
+        <th>ID</th>
+        <th>University</th>
+        <th>Country</th>
+        <th>Location</th>
+    </tr>
+</thead>
+
+<tbody>
+<% @institutions.each do |row| %>
+    <tr>
+    <td><%= row.id  %></td>
+    <td><%= row.university  %></td>
+    <td><%= row.country  %></td>
+    <td>
+        <%= link_to 'open location', "https://www.google.com/maps?q=#{row.lat},#{row.lng}", target: "_blank" %>
+    </td>    
+    </tr>
+<% end %>
+</tbody>
+
+</table>
