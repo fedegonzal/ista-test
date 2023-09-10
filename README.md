@@ -12,6 +12,8 @@ To address it, I used the following approach:
 
 2. I made several mini-applications just to test it with different technologies:
    - Plain Javascript + DataTable plugin
+   - VueJS + DataTable plugin
+   - VueJS without DataTable, doing interactive sortering by myself
 
 ## Requirements
 
@@ -21,3 +23,20 @@ You can run each application separately, but you need to install some dependenci
 
 Needed to reproduce the creation of JSON and SQLite simplified versions (provided here in the repo). Just need Python 3.6 or higher installed and run the script:
 ```python sqlite2json.py```
+
+### Plain Javascript
+
+Just open the file [javascript/index.html](javascript/index.html) in your browser using a local webserver. You can use ```npm http-server``` to do it (you need node installed and later you can do ```npm install http-server -g``` to install the local webserver).
+
+### VueJS
+
+To run the VueJS version of the application:
+1. Install VueJS and DataTables dependencies. You can do it with npm: ```npm install```
+2. Go to the folder [vuejs](vuejs) and run the local webserver: ```npm run dev```
+
+There is two versions of the VueJS application:
+- Using DataTables plugin.
+- Without DataTables plugin, doing interactive sortering by myself.
+
+You will see both when the app starts.
+
