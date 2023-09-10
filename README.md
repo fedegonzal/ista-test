@@ -10,6 +10,9 @@ To address it, I used the following approach:
    - [JSON file](data/data.json) useful to work with Javascript on the frontend.
    - [SQLite database](data/data_fixed.sqlite3) useful to work with Rails on server side.
 
+2. I made several mini-applications just to test it with different technologies:
+   - Plain Javascript + DataTable plugin
+
 ## Requirements
 
 You can run each application separately, but you need to install some dependencies first.

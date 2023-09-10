@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISTA Plain JS Version</title>
+
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    
+    <style>
+        thead {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <table id="table" class="stripe hover order-column row-border fixedHeader-floating">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>University</th>
+                <th>Country</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr id="rowTemplate" style="display: none;">
+                <td class="id"></td>
+                <td class="university"></td>
+                <td class="country"></td>
+                <td class="location"></td>
+            </tr>    
+        </tbody>
+
+    </table>
+
+    <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="//cdn.datatables.net/fixedheader/3.4.0/js/dataTables.fixedHeader.min.js"></script>
+    
+    <script src="table.js"></script>
+</body>
+</html>
