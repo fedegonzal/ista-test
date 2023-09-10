@@ -14,6 +14,7 @@ To address it, I used the following approach:
    - Plain Javascript + DataTable plugin
    - VueJS + DataTable plugin
    - VueJS without DataTable, doing interactive sortering by myself
+   - Ruby on Rails classic MVC without migrations
 
 ## Requirements
 
