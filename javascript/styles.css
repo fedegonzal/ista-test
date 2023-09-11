@@ -1,0 +1,57 @@
+#app {
+    margin-top: 1em;
+}
+
+/* Header Styles */
+
+header { margin: 1em 0; }
+header .logo { width: 200px; }
+header h1 { font-size: 2em; }
+header p { font-size: 1em; }
+
+
+/* Table Styles */
+
+table thead {
+    position: sticky;
+    top: 0;
+}
+
+table thead th {
+    background-color: #036234 !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+table thead th.asc::after {
+    content: '▲';
+    margin-left: .5em;
+}
+
+table thead th.desc:after {
+    content: '▼';
+    margin-left: .5em;
+}
+
+table thead th.no-sort {
+    cursor: default;
+}
+
+table thead th.no-sort:after {
+    content: '\01F512';
+    margin-left: .5em;
+}
+
+table td {
+    min-width: 50px;
+}
+
+table a {
+    color: #d43900;
+    text-decoration: none;
+    
+}
+
+table a:hover {
+    background-color: lightyellow;
+}

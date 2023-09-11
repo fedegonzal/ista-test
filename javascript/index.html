@@ -1,44 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ISTA Plain JS Version</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISTA Plain JS Edition</title>
 
-    <link rel="stylesheet" href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-    
-    <style>
-        thead {
-            background-color: #f1f1f1;
-        }
-    </style>
-</head>
-<body>
-    <table id="table" class="stripe hover order-column row-border fixedHeader-floating">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>University</th>
-                <th>Country</th>
-                <th>Location</th>
-            </tr>
-        </thead>
+    <!-- DataTable Styles -->
+    <link
+      rel="stylesheet"
+      href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"
+    />
 
-        <tbody>
-            <tr id="rowTemplate" style="display: none;">
-                <td class="id"></td>
-                <td class="university"></td>
-                <td class="country"></td>
-                <td class="location"></td>
-            </tr>    
-        </tbody>
+    <!-- Bootstrap Styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
 
-    </table>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div id="app">
+            <header class="row">
+              <div class="col-3">
+                <img
+                  class="logo"
+                  src="https://ista.ac.at/wp-content/themes/wp-theme-ist-pubwww/assets/img/logo/ISTA_Logo_4c_rgb.svg"
+                />
+              </div>
+              <div class="col-9">
+                <h1>ISTA Programming Test - Plain JS version</h1>
+                <p>
+                  Column sorting uses DataTable library. Bootstrap for layout.
+                  No responsive version.
+                </p>
+              </div>
+            </header>
 
+            <table id="table" class="table table-striped table-lg">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>University</th>
+                  <th>Country</th>
+                  <th>Location</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr id="rowTemplate" style="display: none">
+                  <td class="id"></td>
+                  <td class="university"></td>
+                  <td class="country"></td>
+                  <td class="location"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery & DataTable -->
     <script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
     <script src="//cdn.datatables.net/fixedheader/3.4.0/js/dataTables.fixedHeader.min.js"></script>
-    
+
+    <!-- Bootstrap Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="table.js"></script>
-</body>
+  </body>
 </html>
