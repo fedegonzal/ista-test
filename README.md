@@ -13,13 +13,14 @@ To address it, I used the following approach:
 2. I made several mini-applications just to test it with different technologies:
    - Plain Javascript + DataTable plugin
    - VueJS without DataTable, doing interactive sortering by myself
-   - Ruby on Rails classic MVC without migrations
+   - Ruby on Rails classic serverside sorting. MVC without migrations
 
 ## Run the applications on internet
 
 You can run the applications on internet, just click on the following links:
 - [Plain Javascript](https://fedegonzal.github.io/ista-test/javascript/)
 - [VueJS](https://fedegonzal.github.io/ista-test/vuejs/dist/)
+- Rails: no deployed version yet, sorry.
 
 ## Requirements to run the applications locally
 
