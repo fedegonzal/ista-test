@@ -1,6 +1,7 @@
 <script setup>
 import { ref, reactive, onMounted } from 'vue'
 import GmapsLink from './GmapsLink.vue'
+import TestHeader from './TestHeader.vue'
 import _ from 'lodash';
 
 const props = defineProps({
@@ -44,13 +45,18 @@ function orderBy(column) {
 </script>
 
 <template>
-    <table id="table" class="stripe fixedHeader-floating">
+    <TestHeader 
+        title="ISTA Programming Test - VueJS scratch version" 
+        content="Column sorting coded from the scratch, using lodash library. Bootstrap for layout. No responsive version." 
+    />
+
+    <table id="table" class="table table-striped table-lg">
         <thead>
             <tr>
                 <th @click="orderBy('id')" :class="columnOrdering.id">ID</th>
                 <th @click="orderBy('university')" :class="columnOrdering.university">University</th>
                 <th @click="orderBy('country')" :class="columnOrdering.country">Country</th>
-                <th>Location</th>
+                <th class="no-sort">Location</th>
             </tr>
         </thead>
 
@@ -70,41 +76,49 @@ function orderBy(column) {
 </template>
 
 <style scoped lang="scss">
-
 table {
-    min-width: 100%;
-
-    &.stripe tr:nth-child(even) {
-        background-color: rgb(249 250 251);
-    }
-
-    &.fixedHeader-floating thead {
-        background-color: lightgray;
+    thead {
         position: sticky;
         top: 0;
-    }
 
-    th {
-        text-align: initial;
-        cursor: pointer;
+        th {
+            background-color: #036234 !important;
+            color: white !important;
+            cursor: pointer;
 
-        &.asc::after {
-            content: '▲';
+            &.asc::after {
+                content: '▲';
+                margin-left: .5em;
+            }
+
+            &.desc:after {
+                content: '▼';
+                margin-left: .5em;
+            }
+
+            &.no-sort {
+                cursor: default;
+
+                &:after {
+                    content: '\01F512';
+                    margin-left: .5em;
+                }
+            }
         }
-
-        &.desc:after {
-            content: '▼';
-        }
     }
 
-    tr {
-        line-height: 2em;
-    }
-
-    th,
     td {
-        padding: 5px;
+        min-width: 50px;
     }
 
+    a {
+        color: #d43900;
+        text-decoration: none;
+        
+        &:hover {
+            background-color: lightyellow;
+        }
+    }
 }
+
 </style>
