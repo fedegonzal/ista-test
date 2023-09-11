@@ -17,7 +17,7 @@ table thead {
     top: 0;
 }
 
-table thead th {
+table thead th, table thead th a {
     background-color: #036234 !important;
     color: white !important;
     cursor: pointer;
