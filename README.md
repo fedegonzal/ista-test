@@ -37,12 +37,12 @@ Just open the file [javascript/index.html](javascript/index.html) in your browse
 ### VueJS
 
 To run the VueJS version of the application:
-1. Install VueJS and DataTables dependencies. You can do it with npm: ```npm install```
+1. Install VueJS and it's dependencies (lodash for sorting). You can do it with npm: ```npm install```
 2. Go to the folder [vuejs](vuejs) and run the local webserver: ```npm run dev```
 
 ### Ruby on Rails
 
-Finally, to tun the Rails version of the application you need to install [Ruby language](https://www.ruby-lang.org/en/) and [Rails Framework](https://rubyonrails.org/). 
+Finally, to run the Rails version of the application you need to install [Ruby language](https://www.ruby-lang.org/en/) and [Rails Framework](https://rubyonrails.org/). 
 
 Then, go to the folder [railsapp](railsapp) and run the local webserver: ```bin/rails server```
 
