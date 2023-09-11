@@ -20,7 +20,7 @@ To address it, I used the following approach:
 You can run the applications on internet, just click on the following links:
 - [Plain Javascript](https://fedegonzal.github.io/ista-test/javascript/)
 - [VueJS](https://fedegonzal.github.io/ista-test/vuejs/dist/)
-- Rails: no deployed version yet, sorry.
+- [Rails](http://139.59.144.51/)
 
 ## Requirements to run the applications locally
 
