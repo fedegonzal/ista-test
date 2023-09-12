@@ -47,7 +47,7 @@ function orderBy(column) {
 <template>
     <TestHeader 
         title="ISTA Programming Test - VueJS scratch version" 
-        content="Column sorting coded from the scratch, using lodash library. Bootstrap for layout. No responsive version." 
+        content="Column sorting coded from the scratch, using lodash library. Bootstrap for layout. Minimal responsive version." 
     />
 
     <table id="table" class="table table-striped table-lg">

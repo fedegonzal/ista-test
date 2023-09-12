@@ -13,10 +13,10 @@ const props = defineProps({
 
 <template>
     <header class="row">
-        <div class="col-3">
+        <div class="col-12 col-lg-3 mb-3 mb-lg-0">
             <img class="logo" src="https://ista.ac.at/wp-content/themes/wp-theme-ist-pubwww/assets/img/logo/ISTA_Logo_4c_rgb.svg">
         </div>
-        <div class="col-9">
+        <div class="col-12 col-lg-9">
             <h1>{{ props.title }}</h1>
             <p>{{ props.content }}</p>
         </div>
