@@ -16,9 +16,9 @@
 <table id="table" class="table table-striped table-lg">
 <thead>
     <tr>
-        <th class="<%= @sorting[:id] %>"><a href="?col=id&dir=<%= @action[:id] %>">ID</a></th>
-        <th class="<%= @sorting[:university] %>"><a href="?col=university&dir=<%= @action[:university] %>">University</a></th>
-        <th class="<%= @sorting[:country] %>"><a href="?col=country&dir=<%= @action[:country] %>">Country</a></th>
+        <th onclick="window.location.href='?col=id&dir=<%= @action[:id] %>'" class="<%= @sorting[:id] %>"><a href="?col=id&dir=<%= @action[:id] %>">ID</a></th>
+        <th onclick="window.location.href='?col=university&dir=<%= @action[:university] %>'" class="<%= @sorting[:university] %>"><a href="?col=university&dir=<%= @action[:university] %>">University</a></th>
+        <th onclick="window.location.href='?col=country&dir=<%= @action[:country] %>'" class="<%= @sorting[:country] %>"><a href="?col=country&dir=<%= @action[:country] %>">Country</a></th>
         <th class="no-sort">Location</th>
     </tr>
 </thead>
